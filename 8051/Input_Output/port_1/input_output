@@ -1,1 +1,6 @@
+      MOV A,#55H
+BACK: MOV P1,A
+      ACALL DELAY
+      CPL A
+      SJMP BACK
 
