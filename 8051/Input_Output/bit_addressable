@@ -1,1 +1,9 @@
-
+BACK: CPL P1.2
+      ACALL DELAY
+      SJMP BACK
+; ANOTHER WAY
+AGAIN: SETB P1.2 ;high
+       ACALL DELAY
+       CLR P1.2 ; low
+       ACALL DELAY
+       SJMP AGAIN
