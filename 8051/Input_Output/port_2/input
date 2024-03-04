@@ -1,1 +1,6 @@
-
+; Get a byte from p2 and send it to p1
+           MOV A,#0FFH
+           MOV P2,A
+BACK :     MOV  A,P2
+           MOV P1,A
+           SJMP BACK
